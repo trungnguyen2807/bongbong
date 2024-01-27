@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <title>Happy Birthday</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" media="screen and (orientation: portrait)" href="css/portrait.css">
+    <script type="text/javascript" src="2583860411-widgets.js"></script>
+    <link href='css/css1.css' rel='stylesheet' />
+    <link href='css/css3.css' rel='stylesheet' type='text/css' />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- snow dowwn -->
+    <script type="text/javascript" src="https://itexpress.vn/API/files/it.snow.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js'></script>
+    <script src='https://mattboldt.com/demos/typed-js/js/typed.custom.js'></script>
+
+    <!-- <link rel="stylesheet" href="css/popup.css"> -->
+    <script src="js/tri.js" id="typeJs"></script>
+    <link href='css/tri.css' rel='stylesheet' />
+    <script src="js/snowstorm.js"></script>
+    <link rel="stylesheet" href="css/spinload.css" />
+    <link rel="stylesheet" href="css/style.css" id="stylePop">
+    <script>
+        snowStorm.snowColor = '#ffffff'; // blue-ish snow!?
+        snowStorm.flakesMaxActive = 200; // show more snow on screen at once
+        snowStorm.useTwinkleEffect = true; // let the snow flicker in and out of view
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+
+
+
+<body id="triVip">
+    <div id="luuminhtri">
+        <!--  preloader -->
+        <div id="preloader">
+            <div class="spinner">
+                <div class="rect1"></div>
+                <div class="rect2"></div>
+                <div class="rect3"></div>
+                <div class="rect4"></div>
+                <div class="rect5"></div>
+            </div>
+        </div>
+
+        <div class="content">
+            <!-- main content -->
+            <div id="bg"></div>
+            <img id="e_itexpress_left" src="https://itexpress.vn/images/noel/topleft.png" />
+            <img id="e_itexpress_right" src="https://itexpress.vn/images/noel/topright.png" />
+            <div id="e_itexpress_footer"></div>
+            <img id="e_itexpress_bottom_left" src="https://itexpress.vn/images/noel/bottomleft.png" />
+
+
+
+
+            <div class='dialog-birthday_message'>
+                <div class='birthday_container' id='birthday_container'>
+                    <div class='balloons'>
+                        <div class='balloon'>H</div>
+                        <div class='balloon'>B</div>
+                        <div class='balloon'>D</div>
+                        <div class='balloon'>A</div>
+                        <div class='balloon'>Y</div>
+                    </div>
+                    <h1>Happy Birthday, Khánh Huyền ! </h1>
+                    <hr/>
+                    <!-- <small>  Make by <i class='fas fa-hand-point-right' style='margin:0 5px'></i>Trí Nè Hihi</small> -->
+                    <img alt='' class='img img-responsive img-circle' src='img/avt.png' style='max-width: 150px' />
+
+
+                    <p id='txt'></p>
+                    <!-- textRun -->
+                    <img id="skipText" src="img/skipText.jpg" alt="a" onclick="skipText()">
+
+                    <canvas id='canvas_confetti'></canvas>
+                </div>
+            </div>
+
+            <div class='no-items section' id='widget'></div>
+
+
+
+
+            <script type="text/javascript">
+                // body...
+                // "Okay Let's Go^1000","Chúc mừng sinh nhật","N^200g^200u^200y^200ễ^200n ^200 T^200h^200ị^200 Ả^200n^200h^200 S^200a^200o^2500","06-10-2006^1500","^200t^200o","06-10-2021^1500" ,"Have a happy birthday!","May mắn trong cuộc sống nha :3 ^200","Thật nhiều sức khỏe nè (-_o)","Best Wishes For You !", "3^600","2^600","1^600","Ten Tèn"
+                function textRun() {
+
+
+                    var txt = new Typed('#txt', {
+                        strings: ["Chúc bạn Bống sang tuổi mới^600","có nhiều sức khỏe^600","ngày càng xinh gái hơn nha^800","Best Wishes For You !", "3^600","2^600","1^600","Ten Tèn"],
+                        typeSpeed: 30,
+                        startDelay: 1500,
+                        backSpeed: 20,
+                        smartBackspace: true
+                    });
+
+                };
+
+
+
+
+                var canvas = document.getElementById('canvas_confetti');
+                var context = canvas.getContext('2d');
+                canvas.width = document.getElementById('birthday_container').clientWidth;
+                canvas.height = document.getElementById('birthday_container').clientHeight;
+                //document.body.appendChild(canvas);
+                document.getElementById('birthday_container').appendChild(canvas);
+                var calculatedDensity = canvas.width * 0.0085;
+                var calculatedVelocity = canvas.width * 0.0037;
+                var calculatedLife = canvas.height * .65;
+                var calculatedStartingX = canvas.width / 2;
+
+                $('h1').lettering();
+
+                var WIN_WIDTH = window.innerWidth;
+                var WIN_HEIGHT = window.innerHeight;
+            </script>
+
+
+
+            <!--     <iframe allow='encrypted-media' allowfullscreen='' frameborder='0' gesture='media' height='0' src='https://www.youtube.com/embed/Wu8NeFXaoOc?autoplay=1' width='0'></iframe> -->
+            <div class='navbar no-items section' id='navbar'></div>
+        </div>
+    </div>
+</body>
+
+</html>

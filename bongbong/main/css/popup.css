@@ -1,0 +1,33 @@
+body {
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.swal2-image {
+    border-radius: 10px;
+}
+
+.swal2-title {
+    font-style: italic;
+    font-weight: bold;
+    color: #901bfb;
+    text-shadow: 2px 0 0 #ffe8e8, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
+.swal2-styled.swal2-cancel,
+.swal2-styled.swal2-confirm {
+    height: 45px;
+    border-radius: .70em;
+}
+
+.swal2-icon .swal2-icon-content {
+    font-size: 5em;
+}
+
+#swal2-html-container {
+    color: #81ff00;
+    font-size: 20px;
+}
+
+#triVip>div.swal2-container.swal2-center.swal2-backdrop-show>div {
+    border: #81ff00;
+}

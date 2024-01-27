@@ -1,0 +1,50 @@
+body {
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif; 
+  }
+  .swal2-title {
+    font-weight: bold;
+    color: #fb00ff;
+    text-shadow: 2px 0 0 #ffe8e8, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+    letter-spacing:normal;
+    padding: 0 0 0;
+  }
+  .swal2-styled.swal2-cancel, .swal2-styled.swal2-confirm{
+    height: 45px;
+    border-radius : .70em;
+  }
+  .swal2-popup {
+      background-image: url('https://png.pngtree.com/background/20210709/original/pngtree-blue-arrow-science-and-technology-background-vector-material-picture-image_320830.jpg');
+      background-size: cover ;
+      border: 2px solid #f600ff;
+
+  }
+  .swal2-html-container {
+    margin: 1em 1.6em .1em;
+      font-size: 20px;
+      color : #0072ff;
+    text-shadow: 2px 0 0 #ffe8e8, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+  }
+  .swal2-image {
+    margin: 1em auto 0;
+}
+@media screen and (min-width : 600px){
+  .swal2-popup {
+    background: url('../img/bgPopUp.jpg');
+    background-size: cover;
+    border: 2px solid #00ccff;
+    border-radius: 8%;
+  }
+  .swal2-title {
+    font-weight: bold;
+    color: #0026ff;
+
+    letter-spacing:normal;
+    padding: 0 0 0;
+  }
+  .swal2-styled.swal2-confirm {
+    background-color: #1400f3;
+}
+.swal2-styled {
+  padding: none 
+}
+}

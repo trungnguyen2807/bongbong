@@ -1,0 +1,32 @@
+  .swal2-container{
+    z-index: 100000 !important;
+  }
+.swal2-image {
+  border-radius: 10px !important;
+}
+.swal2-title, .swal2-content, .swal2-html-container{
+  color: azure !important;
+}
+.swal2-popup {
+  border-radius: 15px !important;
+  background-image: url(../img/iput-bg.jpg);
+  background-size: cover;
+  z-index: 100000;
+}
+
+.swal2-title {
+padding : 0;
+}
+.swal2-html-container {
+  margin: 10px 0 0 0;
+}
+.swal2-actions {
+  margin: 5px 0 0 0;
+}
+
+element.style {
+  display: block;
+}
+
+
+
